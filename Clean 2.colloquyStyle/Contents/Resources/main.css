@@ -1,0 +1,150 @@
+* {
+	font: 10px 'Menlo', sans-serif;
+}
+
+body {
+	margin: 0.5ex 0.5ex 0.5ex 0.5ex;
+	color: black;
+	background-color: white;
+}
+
+a, a:link, a:visited, a:active {
+  color: #06a;
+  text-decoration: none;
+}
+
+.message, .event, .action {
+  margin-bottom: 0.4ex;
+}
+
+.envelope {
+  margin-bottom:3px;
+  clear: both;
+}
+
+.operator:before {
+  content: "@";
+}
+
+.voice:before {
+  content: "+";
+}
+
+.envelope > .member {
+  display: block;
+  float: left;
+  width: 7.7em;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  /*clear: both;*/
+}
+
+.envelope > .self {
+	color:#2e4966;
+}
+
+.envelope.self {
+	background-color:#f5f5f5;
+	padding:2px 0;
+}
+
+.event > .member {
+}
+
+.event .hostmask {
+}
+
+.event .hostmask:before {
+  content: " (";
+}
+
+.event .hostmask:after {
+  content: ")";
+}
+
+.message {
+  display: block;
+  margin-left: 8em;
+  margin-right: 5em;
+  padding: 0px;
+}
+
+.envelope > .member:after {
+  content: ":";
+}
+
+/*.message:before {
+  content: "\201e";
+}
+
+.message:after {
+  content: "\201c";
+}*/
+
+.action {
+  /* font-variant: small-caps; */
+}
+
+.action > .member:before {
+  content: "\2217";
+  padding-right: 0.3ex;
+}
+
+.action > .member:after {
+  content: "";
+}
+
+.event {
+  display: block;
+  margin-left: 6em;
+  margin-right: 5em;
+  color:#888;
+  /* background: #ddf; */
+}
+
+.event .member {
+  color:#666;
+}
+
+.joined:before {
+  content: "\203a";
+  padding-right: 1ex;
+}
+
+.parted:before {
+  content: "\2039";
+  padding-right: 1ex;
+}
+
+.kicked:before {
+  content: "\ab";
+  padding-right: 1ex;
+}
+
+.voiced:before {
+  content: "\b7";
+  padding-right: 1ex;
+}
+
+.promoted:before {
+  content: "\2c6";
+  padding-right: 1ex;
+}
+
+.timestamp {
+  display: block;
+  float: right;
+  clear: both;
+  color: #CCC;
+  width: 5em;
+  text-align: right;
+}
+
+.timestamp > .pm {
+  display: none;
+}
+
+.timestamp > .hour12 {
+  display: none;
+}
