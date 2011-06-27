@@ -9,7 +9,7 @@ body {
 }
 
 a, a:link, a:visited, a:active {
-  color: #06a;
+  color: #516f8a;
   text-decoration: none;
 }
 
@@ -37,8 +37,10 @@ a, a:link, a:visited, a:active {
   text-align: right;
   overflow: hidden;
   white-space: nowrap;
+  color:#06a;
   /*clear: both;*/
 }
+
 
 .envelope > .self {
 	color:#2e4966;
